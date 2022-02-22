@@ -53,8 +53,8 @@ const HomeRouterView = ({
 HomeRouterView.propTypes = {
   theme: PropTypes.object.isRequired,
   pagination: PropTypes.object.isRequired,
-  data: PropTypes.object.isRequired,
-  data: PropTypes.object.isRequired,
+  data: PropTypes.array.isRequired,
+  cardsData: PropTypes.object.isRequired,
 }
 
 

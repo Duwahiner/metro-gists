@@ -7,6 +7,7 @@ const Link = styled(Links)`
   background-color: transparent;
   cursor: pointer;
 `
+
 export const CurrentLink = ({ children, path }) => {
   return (
     <Link to={path}>
@@ -17,5 +18,5 @@ export const CurrentLink = ({ children, path }) => {
 
 Link.propTypes = {
   children: PropTypes.object,
-  path: PropTypes.string.isRequired
+  path: PropTypes.string
 }

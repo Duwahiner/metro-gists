@@ -11,7 +11,6 @@ import { Spinner } from '../../components/Spinner'
 import {
     getGistsPublicsSelector,
     getPaginationsSelector,
-    getShowErrorSelector,
     getShowSpinerSelector
   } from '../../selectors'
 
@@ -26,7 +25,6 @@ const ContainerRouter = (props) => {
   const gists = useSelector(getGistsPublicsSelector)
   const paginet = useSelector(getPaginationsSelector)
   const showSpiner = useSelector(getShowSpinerSelector)
-  const showError = useSelector(getShowErrorSelector)
 
   const theme = useTheme()
   const dispatch = useDispatch()
@@ -44,7 +42,7 @@ const ContainerRouter = (props) => {
 
   useEffect(() => {
     dispatch(getGistsPublics(paginet.page))
-  }, [paginet.page])
+  }, [paginet.page, dispatch])
 
   return (
     <Box>

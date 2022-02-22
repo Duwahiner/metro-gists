@@ -21,22 +21,22 @@ export const Header = ({ theme, pagination }) => {
             <Logo theme={theme} />
           </Grid>
 
-         {
-           pagination.pathname !== '/'
-            ? (
-                <Grid
-                container
-                item 
-                xs={12}
-                sm={12}
-                md={12}
-                justifyContent='center'
-              >
+          {
+            pagination.pathname !== '/'
+              ? (
+                  <Grid
+                  container
+                  item 
+                  xs={12}
+                  sm={12}
+                  md={12}
+                  justifyContent='center'
+                >
                   <Menu theme={theme} />
                 </Grid>
-              )
-            : null
-         }
+                )
+              : null
+          }
         </Grid>
       </WrapperContainer>
     </Container>

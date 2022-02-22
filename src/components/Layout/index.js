@@ -1,5 +1,4 @@
 import styled from '@emotion/styled'
-import { Box, Grid } from '@mui/material'
 import PropTypes from 'prop-types'
 
 import { Header } from '../Header'

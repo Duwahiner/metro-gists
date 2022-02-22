@@ -12,7 +12,7 @@ export const usePagination = (init) => {
     setPage(value)
   }
 
-  useEffect(() => dispatch(setPaginationPage({ page })), [page])
+  useEffect(() => dispatch(setPaginationPage({ page })), [page, dispatch])
 
   return {
     page,

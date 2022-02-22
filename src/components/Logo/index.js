@@ -4,7 +4,6 @@ import { Grid } from '@mui/material'
 import PropTypes from 'prop-types'
 
 import { Container as Content } from '../../util/template'
-import { Text } from '../Text'
 import { CurrentLink } from '../CurrentLink'
 import { Image } from '../Image'
 import logo from '../../assets/svg/logo-metro.svg'

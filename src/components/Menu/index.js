@@ -12,9 +12,7 @@ const Container = styled(Content)`
     solid 1px ${({ theme }) => theme.colors.borderColor};
 `
 
-export const Menu = ({ 
-  theme,
-}) => {
+export const Menu = ({ theme }) => {
   return (
     <Container theme={theme} py={1.2}>
       <WrapperContainer>
@@ -38,5 +36,5 @@ export const Menu = ({
 }
 
 Menu.propTypes = {
-  theme: PropTypes.object,
+  theme: PropTypes.object.isRequired,
 }
