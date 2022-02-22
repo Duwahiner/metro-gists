@@ -48,13 +48,13 @@ Text.propTypes = {
     PropTypes.string,
     PropTypes.element,
     PropTypes.elementType
-  ]).isRequired,
+  ]),
   fontFamily: PropTypes.string,
   fontSize:  PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.number,
     PropTypes.array
-  ]).isRequired,
+  ]),
   color: PropTypes.string,
   lineHeight: PropTypes.string,
   textAlign: PropTypes.string,
